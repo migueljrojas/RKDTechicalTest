@@ -5,7 +5,7 @@ Vanilla JavaScript range calendar
 - Fork this repository in to your github account
 - Complete the Tasks
 - Deploy your solution using github pages or the tool you prefer
-- Share the url of the github and the solution deployed
+- Share the url of the github repository and the solution deployed
 
 ## Description
 A simple vanilla js calendar that renders as many weeks/months/years based on 2 user inputs:
