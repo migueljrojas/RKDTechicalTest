@@ -119,3 +119,8 @@
 .month ol > li > span.disabled {
 	color: #999;
 }
+
+.month > .week_days > .today {
+	background: #444;
+	color: #fff;
+}

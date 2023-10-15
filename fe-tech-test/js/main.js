@@ -50,6 +50,10 @@ var dayName;
  *  Helpers
  */
 
+// Changes an element innetText
+function changeText(el, newString) {
+	return el.innerText = newString;
+}
 
 // Get todays date formatted as dd/mm/yyyy
 function getTodayDate() {
@@ -291,6 +295,7 @@ function fillEmptyMonth(year, month, start, length) {
 // Validate form data and submit
 function validateForm() {
 	var formElem = document.getElementById('cal_form'),
+		submitBtn = document.querySelector('button[type="submit"]'),
 		inputArray = formElem.querySelectorAll('input');
 
 	// Add classname 'used' if input has a value
@@ -352,6 +357,7 @@ function validateForm() {
 		if ( !errorsLen ) {
 			main.classList.add('with-data');
 			cal.parentNode.classList.add('loading');
+			changeText(submitBtn, 'Update Calendar');
 
 			while ( cal.hasChildNodes() ) {
 				cal.removeChild(cal.lastChild);
