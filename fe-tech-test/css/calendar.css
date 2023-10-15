@@ -120,7 +120,20 @@
 	color: #999;
 }
 
-.month > .week_days > .today {
+.month > .week_days > .holiday,
+.month > .week_days > .holiday span
+ {
+	background: #3d9438;
+	color: #fff;
+	cursor: pointer;
+}
+
+.month > .week_days > .holiday span {
+	pointer-events: none;
+}
+
+.month > .week_days > .today,
+.month > .week_days > .today span {
 	background: #444;
 	color: #fff;
 }
